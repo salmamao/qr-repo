@@ -1,0 +1,36 @@
+@import "common";
+@import "questions-list";
+
+#menu {
+  margin-bottom: 0;
+  background-color: $nav-color;
+  padding: 10px 0;
+  height: auto;
+  border: 0;
+  position: relative;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  min-height: 5rem;
+  ul {
+    float: right;
+    margin-right: -15px;
+    margin-top: 1rem;
+  }
+}
+
+#home {
+  background: url(../image.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 17.3% 0;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  h1 {
+    margin-bottom: 3rem;
+  }
+}
