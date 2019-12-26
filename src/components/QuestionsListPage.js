@@ -1,6 +1,20 @@
 import React, {Component} from "react";
+import { connect } from 'react-redux';
+import { fetchQuestions } from '../actions/thunks/questions';
 
+const mapStateToProps = (state, ownProps) => ({
+
+});
+
+const mapDispatchToProps = dispatch => ({
+    fetchQuestions: () => dispatch(fetchQuestions()),
+});
 class QuestionsListPage extends Component {
+
+    componentWillMount() {
+        this.props.fetchQuestions();
+    }
+
     render() {
         return (
             <div id="questions-list">
@@ -42,5 +56,4 @@ class QuestionsListPage extends Component {
     }
 
 }
-
-export default QuestionsListPage;
+export default connect(mapStateToProps, mapDispatchToProps)(QuestionsListPage);
