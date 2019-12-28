@@ -2,9 +2,10 @@ import React from 'react';
 import './styles/app.scss';
 import {Route, Switch } from "react-router-dom";
 import HomePage from "./components/HomePage";
-import QuestionsListPage from "./components/QuestionsListPage";
-import QuestionUnitPage from "./components/QuestionUnitPage";
+import QuestionsListPage from "./components/Questions/QuestionsListPage";
+import QuestionUnitPage from "./components/Questions/QuestionUnitPage";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 export const urls = {
     home_page: '/',
@@ -21,6 +22,7 @@ function App() {
                 <Route path={urls.questions_list} component={QuestionsListPage}/>
                 <Route path={urls.question_unit} component={QuestionUnitPage} />
             </Switch>
+            <Footer/>
         </React.Fragment>
     );
 }

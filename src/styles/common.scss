@@ -1,6 +1,7 @@
 $nav-color: #b97741;
 $questions-list-color: #909090;
 $link-color: #EFECE6;
+$footer-color: #333;
 
 a {
   font-size: 13px;
@@ -33,7 +34,7 @@ a {
 
 h2 {
   text-transform: uppercase;
-  color: #333;
+  color: $footer-color;
   font-size: 30px !important;
   font-weight: 200 !important;
 }

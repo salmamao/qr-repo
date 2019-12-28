@@ -3,9 +3,7 @@
   background-color: #EAEAEA;
   color: $questions-list-color;
   width: 100%;
-  height: 100%;
-  position: absolute;
-  overflow-x: hidden;
+  position: relative;
   .header-section {
     text-align: center;
   }
@@ -24,10 +22,10 @@
       &:hover {
         background-color: #F1F2F4;
       }
-      span {
+      .item-right {
         text-align: center;
         font-size: 30px;
-        background-color: #333;
+        background-color: $footer-color;
         color: #ffffff;
         padding: 25px 0;
         border-top-left-radius: 0;
@@ -41,6 +39,10 @@
       }
       .item-body {
         padding: 0 1rem;
+        span {
+          text-transform: uppercase;
+          color: $nav-color;
+        }
       }
     }
   }

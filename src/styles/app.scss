@@ -10,7 +10,6 @@
   position: relative;
   right: 0;
   left: 0;
-  z-index: 1030;
   min-height: 5rem;
   ul {
     float: right;
@@ -32,5 +31,15 @@
   width: 100%;
   h1 {
     margin-bottom: 3rem;
+  }
+}
+
+#footer {
+  padding: 1.5rem 0 .1rem;
+  background-color: $footer-color;
+  color: #fff;
+  .copyright {
+    text-align: center;
+    padding-bottom: 1rem;
   }
 }
