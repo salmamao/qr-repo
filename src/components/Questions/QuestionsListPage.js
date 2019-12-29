@@ -11,6 +11,7 @@ const mapDispatchToProps = dispatch => ({
     fetchQuestions: () => dispatch(fetchQuestions()),
 });
 class QuestionsListPage extends Component {
+
     componentDidMount() {
         this.props.fetchQuestions();
     }
@@ -23,8 +24,8 @@ class QuestionsListPage extends Component {
             return (
                 <div id="questions-list">
                     <div className="header-section">
-                        <h2>Questions <span className="highlight">list</span></h2>
-                        <h5><em>choose the question you want to answer</em></h5>
+                        <h2><span className="highlight">Liste</span> des questions </h2>
+                        <h5><em>choisissez la question à laquelle vous souhaitez répondre</em></h5>
                         <div className="separator"><span></span></div>
                     </div>
                     <div className="container">

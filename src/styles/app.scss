@@ -1,5 +1,6 @@
 @import "common";
 @import "questions-list";
+@import "question-unit";
 
 #menu {
   margin-bottom: 0;
@@ -32,14 +33,23 @@
   h1 {
     margin-bottom: 3rem;
   }
+  .button {
+    border: #fff 1px solid;
+    &:hover {
+      border-bottom: 2px solid $nav-color;
+    }
+  }
 }
 
 #footer {
-  padding: 1.5rem 0 .1rem;
+  padding-top: 1rem;
   background-color: $footer-color;
   color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   .copyright {
     text-align: center;
-    padding-bottom: 1rem;
+    padding-bottom: .8rem;
   }
 }

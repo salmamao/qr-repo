@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/app.scss';
-import {Route, Switch } from "react-router-dom";
+import {Route, Switch, withRouter } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import QuestionsListPage from "./components/Questions/QuestionsListPage";
 import QuestionUnitPage from "./components/Questions/QuestionUnitPage";
@@ -10,10 +10,10 @@ import Footer from "./components/Footer";
 export const urls = {
     home_page: '/',
     questions_list: '/questions',
-    question_unit: '/question(/:questionId)',
+    question_unit: '/question/:counter/:questionId',
 };
 
-function App() {
+function App(props) {
     return (
         <React.Fragment>
             <NavBar/>
@@ -22,9 +22,9 @@ function App() {
                 <Route path={urls.questions_list} component={QuestionsListPage}/>
                 <Route path={urls.question_unit} component={QuestionUnitPage} />
             </Switch>
-            <Footer/>
+            {!props.location.pathname.endsWith("/") && <Footer/>}
         </React.Fragment>
     );
 }
 
-export default App;
+export default withRouter(App);

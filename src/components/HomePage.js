@@ -8,8 +8,8 @@ class HomePage extends Component {
                 <div className="overlay">
                     <div className="container">
                         <div className="content-heading text-center">
-                            <h1>Ready for a Quiz ?  </h1>
-                            <Link to="/questions" className="button">Let's GO !</Link>
+                            <h1>Prêt pour un quiz?</h1>
+                            <Link to="/questions" className="button">C'est partie !</Link>
                         </div>
                     </div>
                 </div>

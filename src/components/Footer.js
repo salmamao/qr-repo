@@ -6,7 +6,7 @@ class Footer extends Component {
             <footer id="footer">
                 <div className="container">
                     <div className="copyright">
-                        © Copyright 2019 Technical test
+                        © Copyright 2019 Test technique - React - NodeJS
                     </div>
                 </div>
             </footer>
