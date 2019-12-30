@@ -1,4 +1,4 @@
-Application Web - React - NodeJS
+# Application Web - React - NodeJS
 ### Développer un mini jeu " Question / Réponses " OUI ou NON
 Dans ce test technique, l’application ReactJs permet de charger plusieurs questions depuis le [**Back-End**](https://github.com/salmamao/firebase-qr-repo) (développé en NodeJS en utilisant une base de données **NoSQL Firestore (Security Rules en mode test / allow read & write)**).
 Ensuite au moment où l’utilisateur choisi l’une des deux réponses (**Oui** ou **Non**), une validation est faite côté **Back-End**, c'est à dire que selon la réponse choisie par l’utilisateur, une réponse adéquate à cette validation est envoyée au 
