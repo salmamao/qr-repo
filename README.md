@@ -1,11 +1,10 @@
 # Application Web - React - NodeJS
 ### Développer un mini jeu " Question / Réponses " OUI ou NON
 Cette application ReactJs permet de charger plusieurs questions depuis le [**Back-End**](https://github.com/salmamao/firebase-qr-repo) (développé en NodeJS en utilisant une base de données **NoSQL Firestore (Security Rules en mode test / allow read & write)**).
-Ensuite au moment où l’utilisateur choisi l’une des deux réponses (**Oui** ou **Non**), une validation est faite côté **Back-End**, c'est à dire que selon la réponse choisie par l’utilisateur, une réponse adéquate à cette validation est envoyée au 
-Serveur distant **(Cloud Functions Firebase)** en utilisant **Http Cloud Functions** (Requête HTTP avec **Axios**).
+Ensuite au moment où l’utilisateur choisi l’une des deux réponses (**Oui** ou **Non**), une validation est faite côté **Back-End**, c'est à dire que selon la réponse choisie par l’utilisateur, une requête HTTP en utilisant **Axios** est envoyée à l'endpoint créé en back-end avec **(Cloud Functions Firebase)**.
 
 ### Création du projet
-Cette application ReactJs à été développée en installant le paquet `create-react-app` avec la commmande: 
+Cette application ReactJs à été développée en utilisant la commmande: 
 ```sh
 $ npx create-react-app qr-repo
 ```
@@ -15,6 +14,7 @@ Ce paquet configure Babel et génère automatiquement un set de règles ESLint, 
 * `npm run build` – génère dans un dossier build, situé à la racine du projet, une version de l’application optimisée pour la livraison sur le serveur web.
 * `npm run test` – exécute tous les tests (fichiers se terminant par `.test.js`) **Jest**.
 * `npm run eject` – permet d’éjecter l'application et revenir vers une version où on a tout le contrôle des fichiers de configuration webpack, babel et ESLint..
+Utilisant aussi la librairie REDUX pour la gestion du Store de l'application.
 
 ### Installation
 Après avoir cloné le projet `git clone`, il faut lancer la commande: 
