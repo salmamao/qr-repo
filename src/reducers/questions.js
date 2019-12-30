@@ -10,7 +10,6 @@ export const questionsReducer = (state = initialState, action) => {
     switch (action.type) {
         case 'FETCH_QUESTIONS_PENDING': {
             return {...state, fetched: false, fetching: true};
-            break;
         }
         case 'FETCH_QUESTIONS_FULFILLED': {
             const { data, numberResult } = action.payload.data;
@@ -22,7 +21,6 @@ export const questionsReducer = (state = initialState, action) => {
                 items: data,
                 nbResult: numberResult
             };
-            break;
         }
         case 'FETCH_QUESTIONS_REJECTED': {
             let error = action.payload;
@@ -42,7 +40,6 @@ export const questionsReducer = (state = initialState, action) => {
                 items: [],
                 error
             };
-            break;
         }
         default:
             return state;

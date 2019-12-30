@@ -4,9 +4,11 @@ import {fetchQuestion, validateAnswer} from "../../actions/thunks/questions";
 import {connect} from "react-redux";
 import {withRouter} from 'react-router-dom';
 import ReactModal from 'react-modal';
+import Loader from "react-loader-spinner";
 
 const mapStateToProps = (state, ownProps) => ({
     questions: state.questions.items,
+    fetching: state.questions.fetching
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -48,9 +50,14 @@ class QuestionUnitPage extends Component {
 
 
     render() {
-        const { match: { params }, history} = this.props;
+        const { match: { params }, history, fetching} = this.props;
         let { content, theme, id, validAnswerModal, answerValidation } = this.state;
 
+        if (fetching) {
+            return <div className="loader">
+                <Loader type="Rings" color="#333" height={80} width={80} timeout={3000}/>
+            </div>
+        }
 
         return (
          <div id="questions-list" className="question-unit">

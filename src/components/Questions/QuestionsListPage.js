@@ -2,9 +2,11 @@ import React, { Component } from "react";
 import { connect } from 'react-redux';
 import { fetchQuestions } from '../../actions/thunks/questions';
 import QuestionItem from "./QuestionItem";
+import Loader from 'react-loader-spinner'
 
 const mapStateToProps = (state, ownProps) => ({
     questions: state.questions.items,
+    fetching: state.questions.fetching,
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -17,8 +19,13 @@ class QuestionsListPage extends Component {
     }
 
     render() {
-        const {questions} = this.props;
+        const {questions, fetching} = this.props;
         let counter = 0;
+        if (fetching) {
+            return <div className="loader">
+                <Loader type="Rings" color="#333" height={80} width={80} timeout={0}/>
+            </div>
+        }
 
         if (questions && questions.length > 0) {
             return (
