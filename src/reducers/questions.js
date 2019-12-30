@@ -1,3 +1,5 @@
+//Questions reducer
+
 const initialState = {
     fetching: false,
     fetched: false,
@@ -12,7 +14,7 @@ export const questionsReducer = (state = initialState, action) => {
             return {...state, fetched: false, fetching: true};
         }
         case 'FETCH_QUESTIONS_FULFILLED': {
-            const { data, numberResult } = action.payload.data;
+            const {data, numberResult} = action.payload.data;
             return {
                 ...state,
                 fetching: false,

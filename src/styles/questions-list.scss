@@ -4,12 +4,15 @@
   color: $questions-list-color;
   width: 100%;
   position: relative;
+
   .header-section {
     text-align: center;
   }
+
   .list-section {
     padding: 2rem 0;
     margin-left: 9rem;
+
     .list-item {
       margin-bottom: 1rem;
       display: flex;
@@ -19,9 +22,11 @@
       width: 50rem;
       padding: 1rem;
       align-items: center;
+
       &:hover {
         background-color: #F1F2F4;
       }
+
       .item-right {
         text-align: center;
         font-size: 30px;
@@ -37,8 +42,10 @@
         text-rendering: auto;
         transform: translate(0, 0);
       }
+
       .item-body {
         padding: 0 1rem;
+
         span {
           text-transform: uppercase;
           color: $nav-color;

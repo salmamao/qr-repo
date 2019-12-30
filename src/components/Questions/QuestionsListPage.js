@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import { connect } from 'react-redux';
-import { fetchQuestions } from '../../actions/thunks/questions';
+import React, {Component} from "react";
+import {connect} from 'react-redux';
+import {fetchQuestions} from '../../actions/thunks/questions';
 import QuestionItem from "./QuestionItem";
 import Loader from 'react-loader-spinner'
 
@@ -12,6 +12,7 @@ const mapStateToProps = (state, ownProps) => ({
 const mapDispatchToProps = dispatch => ({
     fetchQuestions: () => dispatch(fetchQuestions()),
 });
+
 class QuestionsListPage extends Component {
 
     componentDidMount() {
@@ -38,7 +39,8 @@ class QuestionsListPage extends Component {
                     <div className="container">
                         <div className="row list-section">
                             <div className="col-md-10 col-md-offset-1">
-                                {questions.map((item) => { counter++;
+                                {questions.map((item) => {
+                                        counter++;
                                         return <QuestionItem key={counter} counter={counter} item={item}/>
                                     }
                                 )}

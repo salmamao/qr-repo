@@ -3,18 +3,18 @@ import {getQuestionsList, getQuestion, getValidateAnswer} from '../../cloudFunct
 
 export const fetchQuestions = () => (dispatch, getState) => {
     return dispatch(getQuestions(
-            getQuestionsList()
+        getQuestionsList()
     ));
 };
 
 export const fetchQuestion = (questionId) => (dispatch, getState) => {
     return dispatch(getQuestions(
-            getQuestion(questionId)
+        getQuestion(questionId)
     ));
 };
 
 export const validateAnswer = (questionId, answer) => (dispatch, getState) => {
     return dispatch(getAnswerValidation(
-            getValidateAnswer(questionId, answer)
+        getValidateAnswer(questionId, answer)
     ));
 };

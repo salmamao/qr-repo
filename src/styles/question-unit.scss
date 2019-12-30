@@ -1,11 +1,13 @@
 .question-unit {
   height: 100vh;
   position: fixed !important;
+
   .answer-buttons {
     button {
       border: $footer-color 1px solid;
       color: $footer-color;
       margin: 0 4rem 0 2rem;
+
       &:hover {
         background: $footer-color;
         border: 1px solid $footer-color;
@@ -13,6 +15,7 @@
       }
     }
   }
+
   .return-button {
     border: $nav-color 1px solid;
     color: $link-color;
@@ -21,10 +24,12 @@
     padding: 1rem 2rem;
     text-transform: unset;
     border-radius: 2rem;
+
     &:hover {
       border: 1px solid $link-color;
     }
   }
+
   h3 {
     max-width: 50%;
     margin-left: 25%;

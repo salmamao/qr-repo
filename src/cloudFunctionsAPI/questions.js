@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+//firebase common url to access projects cloud functions
 export const FIREBASE_ENDPOINT_URL = `https://us-central1-qr-test-project-e01ff.cloudfunctions.net`;
 
 export const getQuestionsList = () => {
@@ -18,8 +19,8 @@ export const getQuestion = (questionId) => {
 export const getValidateAnswer = (questionId, answer) => {
     const requestUrl = `${FIREBASE_ENDPOINT_URL}/validateAnswer`;
     const params = {
-      id: questionId,
-      answer: answer
+        id: questionId,
+        answer: answer
     };
     return axios.get(requestUrl, {params});
 };

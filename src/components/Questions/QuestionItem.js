@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import {withRouter} from 'react-router-dom';
 
 class QuestionItem extends Component {
@@ -6,7 +6,8 @@ class QuestionItem extends Component {
         let {item, counter, history} = this.props;
 
         return (
-            <div key={`question-${counter}`} className="list-item"  onClick={() => history.push(`/question/${counter}/${item.id}`)}>
+            <div key={`question-${counter}`} className="list-item"
+                 onClick={() => history.push(`/question/${counter}/${item.id}`)}>
                 <div>
                     <span className="item-right">?</span>
                 </div>
