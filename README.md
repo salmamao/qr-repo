@@ -16,7 +16,7 @@ Ce paquet configure Babel et génère automatiquement un set de règles ESLint, 
 * `npm run test` – exécute tous les tests (fichiers se terminant par `.test.js`) **Jest**.
 * `npm run eject` – permet d’éjecter l'application et revenir vers une version où on a tout le contrôle des fichiers de configuration webpack, babel et ESLint..
 
-L'application utilise aussi la librairie **REDUX** pour la gestion du **Store**.
+L'application utilise React en sa version **16.12.0** et aussi la librairie **REDUX** pour la gestion du **Store**.
 
 ### Installation
 Après avoir cloné le projet `git clone`, il faut lancer la commande: 
