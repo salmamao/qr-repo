@@ -18,6 +18,9 @@ Ce paquet configure Babel et génère automatiquement un set de règles ESLint, 
 
 L'application utilise React en sa version **16.12.0** et aussi la librairie **REDUX** pour la gestion du **Store**.
 
+##### Style
+Utilisant le framework Front-End **Bootstrap** et le développement en **sass** pour le styling des interfaces.
+
 ### Installation
 Après avoir cloné le projet `git clone`, il faut lancer la commande: 
 ```sh
