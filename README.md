@@ -13,7 +13,7 @@ Ce paquet configure Babel et génère automatiquement un set de règles ESLint, 
 
 * `npm run start` – permet de lancer l’application sur le port 3000 de la machine.
 * `npm run build` – génère dans un dossier build, situé à la racine du projet, une version de l’application optimisée pour la livraison sur le serveur web.
-* `npm run test` – va exécuter tout les tests (fichiers se terminant par `.test.js`) **Jest**.
+* `npm run test` – exécute tous les tests (fichiers se terminant par `.test.js`) **Jest**.
 * `npm run eject` – permet d’éjecter l'application et revenir vers une version où on a tout le contrôle des fichiers de configuration webpack, babel et ESLint..
 
 ### Installation
