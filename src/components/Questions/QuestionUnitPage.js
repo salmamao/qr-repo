@@ -33,6 +33,8 @@ class QuestionUnitPage extends Component {
         if (params.questionId) {
             fetchQuestion(params.questionId);
         }
+        ReactModal.setAppElement('body');
+
     }
 
     componentWillReceiveProps(nextProps) {
