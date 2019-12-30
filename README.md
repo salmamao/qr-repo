@@ -28,18 +28,19 @@ $ npm run start
 l'application est démarrée sur le port 3000 avec l'url : `http://localhost:3000` dans le navigateur.
 
 ### Prises d'écran 
-* La page d'acceuil de l'application: 
+**La page d'acceuil de l'application:**
 <img width="800" alt="screenshot1" src="https://user-images.githubusercontent.com/21684428/71585620-868f4580-2b17-11ea-80fc-6fa1afde2dab.png">
-* La page de listing des questions:
+
+**La page de listing des questions:**
 <img width="800" alt="screenshot2" src="https://user-images.githubusercontent.com/21684428/71585935-98bdb380-2b18-11ea-85e1-fde171dc2c11.png">
-* La page de réponse à une question:
+
+**La page de réponse à une question:**
 <img width="1440" alt="Screen Shot 2019-12-30 at 15 11 54" src="https://user-images.githubusercontent.com/21684428/71585978-be4abd00-2b18-11ea-9a02-2779e5720f4d.png">
-- Si la réponse est juste: 
+
+**Si la réponse est juste:** 
 <img width="1440" alt="Screen Shot 2019-12-30 at 15 12 59" src="https://user-images.githubusercontent.com/21684428/71586016-e803e400-2b18-11ea-87c0-1306fc6e2821.png">
-- Sinon si la réponse est fausse:
+**Sinon si la réponse est fausse:**
 <img width="1440" alt="Screen Shot 2019-12-30 at 15 13 52" src="https://user-images.githubusercontent.com/21684428/71586051-14b7fb80-2b19-11ea-8f8d-b1f0efa90edc.png">
-
-
 
 
 
