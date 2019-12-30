@@ -26,3 +26,6 @@ puis démarrer l'application en lançant la commande :
 $ npm run start
 ```
 l'application est démarrée sur le port 3000 avec l'url : `http://localhost:3000` dans le navigateur.
+
+### Prises d'écran 
+la page d'acceuil de l'application: 
