@@ -22,7 +22,7 @@ L'application utilise React en sa version **16.12.0** et aussi la librairie **RE
 Utilisant le framework Front-End **Bootstrap** et le développement en **sass** pour le styling des interfaces.
 
 ### Installation
-Après avoir cloné le projet `git clone`, il faut lancer la commande: 
+Après avoir cloné le projet par `git clone`, il faut lancer la commande: 
 ```sh
 $ npm install
 ```
