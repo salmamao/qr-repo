@@ -8,11 +8,18 @@ export const getQuestionsList = () => {
 };
 
 export const getQuestion = (questionId) => {
-    const requestUrl = `${FIREBASE_ENDPOINT_URL}/getQuestion?id=${questionId}`;
-    return axios.get(requestUrl);
+    const requestUrl = `${FIREBASE_ENDPOINT_URL}/getQuestion`;
+    const params = {
+        id: questionId,
+    };
+    return axios.get(requestUrl, {params});
 };
 
 export const getValidateAnswer = (questionId, answer) => {
-    const requestUrl = `${FIREBASE_ENDPOINT_URL}/validateAnswer?id=${questionId}&answer=${answer}`;
-    return axios.get(requestUrl);
+    const requestUrl = `${FIREBASE_ENDPOINT_URL}/validateAnswer`;
+    const params = {
+      id: questionId,
+      answer: answer
+    };
+    return axios.get(requestUrl, {params});
 };

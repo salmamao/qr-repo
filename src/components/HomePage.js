@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 class HomePage extends Component {
     render() {
         return (
-            <div id="home">
+            <div id="home" style={{backgroundImage: "url('./image.png')"}}>
                 <div className="overlay">
                     <div className="container">
                         <div className="content-heading text-center">
@@ -14,9 +14,8 @@ class HomePage extends Component {
                     </div>
                 </div>
             </div>
-    );
+        );
     }
-
-    }
+}
 
 export default HomePage;
