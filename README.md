@@ -17,7 +17,7 @@ Ce paquet configure Babel et génère automatiquement un set de règles ESLint, 
 * `npm run eject` – permet d’éjecter l'application et revenir vers une version où on a tout le contrôle des fichiers de configuration webpack, babel et ESLint..
 
 ### Installation
-Après avoir cloné le projet `git clone`, il faut lancé la commande: 
+Après avoir cloné le projet `git clone`, il faut lancer la commande: 
 ```sh
 $ npm install
 ```
